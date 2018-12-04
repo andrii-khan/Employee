@@ -4,7 +4,7 @@
     let tmpl = document.getElementById('employee-tmpl').innerHTML,
         employeeTmpl = '';
     let UL = document.querySelector('.employee-list');
-    xhr.open('GET', '../data/employees.json');
+    xhr.open('GET', './data/employees.json');
     xhr.send(); 
     xhr.onload = function () {
         const data = JSON.parse(this.responseText);
